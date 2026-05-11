@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./component/navabr";
 import Footer from "./component/footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "SinglishX (සිංහල Singlish Typer) - Sinhala Unicode Converter",
@@ -88,6 +89,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4481173940421216"
+          crossOrigin="anonymous"
+        />
         <Navbar />
 
         {children}

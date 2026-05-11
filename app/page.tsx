@@ -16,6 +16,41 @@ export default function Home() {
   return (
     <main>
 
+      {/* Structured Data — Schema.org JSON-LD for Google & AI */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "SinglishX",
+            alternateName: ["සිංහල Singlish Typer", "Sinhala Unicode Converter"],
+            applicationCategory: "UtilitiesApplication",
+            operatingSystem: "Web",
+            url: "https://singlishx.netlify.app/",
+            description:
+              "SinglishX is a Sinhala Unicode Typing and Real-time Unicode Converter platform. Type Sinhala easily using Singlish typing, Sinhala keyboard, Helakuru-style typing, and real-time Unicode conversion.",
+            inLanguage: ["en", "si"],
+            isAccessibleForFree: true,
+            creator: {
+              "@type": "Person",
+              name: "Januda J. Kodithuwakku",
+              alternateName: "Januda Janandith",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "SinglishX",
+              url: "https://singlishx.netlify.app/",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+          }),
+        }}
+      />
+
       {/* SEO-only content — invisible to users, indexed by Google & AI crawlers */}
       <div style={seoHidden} aria-hidden="true">
         <h1>SinglishX (සිංහල Singlish Typer) - Sinhala Unicode Converter</h1>

@@ -26,12 +26,9 @@ export const metadata: Metadata = {
   verification: {
     google: "google01a98f4cbe16d4f9",
   },
-
-  // Google AdSense verification meta tag
   other: {
     "google-adsense-account": "ca-pub-4481173940421216",
   },
-
   openGraph: {
     title: "SinglishX - Sinhala Unicode Typing Platform",
     description:
@@ -60,6 +57,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* AdSense verification — hardcoded as fallback */}
+        <meta name="google-adsense-account" content="ca-pub-4481173940421216" />
+      </head>
       <body>
         <Script
           async

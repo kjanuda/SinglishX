@@ -109,28 +109,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-
-          {/* CTA button */}
-          <a
-            href="/converter"
-            onMouseEnter={() => setHovered("cta")}
-            onMouseLeave={() => setHovered(null)}
-            style={{
-              marginLeft: 8,
-              fontSize: 13,
-              fontWeight: 700,
-              color: "#ffffff",
-              textDecoration: "none",
-              padding: "7px 18px",
-              borderRadius: 8,
-              background: hovered === "cta" ? "#0d47a1" : "#1565c0",
-              border: "2px solid #1565c0",
-              transition: "all .15s",
-              whiteSpace: "nowrap",
-            }}
-          >
-            ⌨ Try Converter
-          </a>
         </div>
 
         {/* ── Mobile Hamburger ── */}
@@ -205,23 +183,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="/converter"
-            onClick={() => setMenuOpen(false)}
-            style={{
-              marginTop: 4,
-              fontSize: 14,
-              fontWeight: 700,
-              color: "#ffffff",
-              textDecoration: "none",
-              padding: "10px 14px",
-              borderRadius: 8,
-              background: "#1565c0",
-              textAlign: "center",
-            }}
-          >
-            ⌨ Try Converter
-          </a>
         </div>
       )}
 

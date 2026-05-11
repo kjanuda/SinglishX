@@ -1,6 +1,7 @@
+
+
 import type { Metadata } from "next";
 import "./globals.css";
-
 import Navbar from "./component/navabr";
 import Footer from "./component/footer";
 
@@ -50,13 +51,17 @@ export const metadata: Metadata = {
   creator: "Januda J. Kodithuwakku",
   publisher: "SinglishX",
 
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://singlishx.netlify.app/"),
+
+  verification: {
+    google: "google01a98f4cbe16d4f9",
+  },
 
   openGraph: {
     title: "SinglishX - Sinhala Unicode Typing Platform",
     description:
       "Type Sinhala easily with SinglishX. Sinhala Unicode Converter, Real-time Sinhala Typing, Helakuru-style typing and Sinhala keyboard tools.",
-    url: "https://yourdomain.com",
+    url: "https://singlishx.netlify.app/",
     siteName: "SinglishX",
     locale: "en_US",
     type: "website",

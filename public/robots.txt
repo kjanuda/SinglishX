@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://singlishx.netlify.app/
+
+# Sitemaps
+Sitemap: https://singlishx.netlify.app/sitemap.xml

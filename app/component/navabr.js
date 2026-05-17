@@ -6,6 +6,7 @@ const SINHALA_FONT = "'Noto Sans Sinhala','Iskoola Pota','Noto Serif Sinhala',se
 
 const NAV_LINKS = [
   { label: "Home",    href: "/" },
+  { label: "Blog",    href: "/blog" },
   { label: "About",   href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

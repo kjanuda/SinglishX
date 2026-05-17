@@ -3,9 +3,10 @@
 const SINHALA_FONT = "'Noto Sans Sinhala','Iskoola Pota','Noto Serif Sinhala',serif";
 
 const NAV_LINKS = [
-  { label: "Home",    href: "/" },
-  { label: "About",   href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Home",           href: "/" },
+  { label: "About",          href: "/about" },
+  { label: "Contact",        href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 export default function Footer() {

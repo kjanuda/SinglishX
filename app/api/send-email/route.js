@@ -12,6 +12,11 @@ export async function POST(request) {
   }
 
   try {
+    // Check if environment variables are set
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+      throw new Error('Email configuration missing: EMAIL_USER or EMAIL_PASSWORD not set');
+    }
+
     // Create transporter using Gmail SMTP
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -60,7 +65,8 @@ export async function POST(request) {
       { status: 200 }
     );
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Error sending email:', error.message);
+    console.error('Error stack:', error.stack);
     return Response.json(
       { message: 'Failed to send email. Please try again later.' },
       { status: 500 }
